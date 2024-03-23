@@ -55,6 +55,16 @@ function MemoryGame() {
     });
     setGameImages(updatedImages);
   }
+  useEffect(() => {
+    if (score === 15) {
+      alert('Congratulations! You won the game!');
+      setScore(0); // Reset score for a new game
+      // Optionally reset the gameImages clicked state here
+    }
+  }, [score]);
+
+
+
 
 useEffect(() => {
     setGameImages(shuffleArray(gameImages));
