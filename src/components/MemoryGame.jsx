@@ -4,14 +4,14 @@ import { useState, useEffect } from 'react';
 
 //Dummy data for the images, replace with your actual images
 const images = [
-  { id: 1, src: '../src/assets/images/one.jpg', clicked: false },
-  { id: 2, src: '../src/assets/images/two.jpg', clicked: false },
-  { id: 3, src: '../src/assets/images/three.jpg', clicked: false },
-  { id: 4, src: '../src/assets/images/four.jpg', clicked: false },
-  { id: 5, src: '../src/assets/images/five.jpg', clicked: false },
-  { id: 6, src: '../src/assets/images/six.jpg', clicked: false },
-  { id: 7, src: '../src/assets/images/seven.jpg', clicked: false },
-  { id: 8, src: '../src/assets/images/eight.jpg', clicked: false },
+  { id: 1, src: '/one.jpg', clicked: false },
+  { id: 2, src: '/two.jpg', clicked: false },
+  { id: 3, src: '/three.jpg', clicked: false },
+  { id: 4, src: '/four.jpg', clicked: false },
+  { id: 5, src: '/five.jpg', clicked: false },
+  { id: 6, src: '/six.jpg', clicked: false },
+  { id: 7, src: '/seven.jpg', clicked: false },
+  { id: 8, src: '/eight.jpg', clicked: false },
   // { id: 9, src: '../src/assets/images/nine.jpg', clicked: false },
 ];
 
