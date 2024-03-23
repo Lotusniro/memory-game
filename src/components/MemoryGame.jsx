@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import './memory.css';
 
 
 //Dummy data for the images, replace with your actual images
@@ -12,6 +13,18 @@ const images = [
   { id: 6, src: '/six.jpg', clicked: false },
   { id: 7, src: '/seven.jpg', clicked: false },
   { id: 8, src: '/eight.jpg', clicked: false },
+  { id: 9, src: '/aa.jpeg', clicked: false },
+  { id: 10, src: '/bb.jpeg', clicked: false },
+  { id: 11, src: '/cc.jpeg', clicked: false },
+  { id: 12, src: '/jon.jpeg', clicked: false },
+  { id: 13, src: '/sponge.png', clicked: false },
+  { id: 14, src: '/nnn.webp', clicked: false },
+  { id: 15, src: '/op.jpeg', clicked: false },
+
+
+
+
+  // { id: 1, src: '../src/assets/images/one.jpg', clicked: false },
   // { id: 9, src: '../src/assets/images/nine.jpg', clicked: false },
 ];
 
@@ -61,14 +74,14 @@ useEffect(() => {
   return (
     <div>
  
-      <h2 style={{backgroundColor:"green",width:"25%",height:"50px",textAlign:"center",margin:"10px auto"}}>Score: {score}</h2>
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+      <h2 >Score: {score}</h2>
+      <div className='mm-game'>
         {gameImages.map((image) => (
           <img
             key={image.id}
             src={image.src}
             alt={`Memory game piece ${image.id}`}
-            style={{ width: '300px', height: '300px', margin: '10px', cursor: 'pointer' }}
+
             onClick={() => handleImageClick(image.id)}
           />
         ))}

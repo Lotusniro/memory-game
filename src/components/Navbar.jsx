@@ -1,10 +1,11 @@
 import React from "react";
+import  "./navbar.css";
 
 
 function Navbar() {
 
 return(
-<div style={{width:"100%",backgroundColor:"purple",color:"white",padding:"20px"}}>
+<div className="nn">
     <h1>Memory Game</h1>
 </div>
 
